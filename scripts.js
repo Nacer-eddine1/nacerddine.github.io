@@ -58,7 +58,7 @@ $(document).ready(function () {
     activateButton("#Supemir-btn");
 
     function visitorsMessage() {
-        $.getJSON("https://api.countapi.xyz/hit/https://nacer-eddine1.github.io/nacereddine.github.io/pagevisitors", function(response) {
+        $.getJSON("https://api.countapi.xyz/hit/nacereddine.github.io/pagevisitors", function(response) {
             const visits = response.value;
             $("#visits").append(`You are the <span class='sandy-brown '> ${visits}th</span> visitor. Welcome on <span class='sandy-brown '>board</span> !`);
         });
